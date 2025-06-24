@@ -11,6 +11,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 // import { useToast } from "@/components/ui/use-toast";
 import { toast } from "sonner";
+import Image from "next/image";
 
 export default function LoginPage() {
   const [email, setEmail] = useState("");
@@ -61,7 +62,13 @@ export default function LoginPage() {
           className="text-center"
         >
           <Link href="/" className="flex justify-center items-center text-primary">
-            <Building className="h-8 w-8" />
+            <Image 
+              src="/logo.png"
+              width={40}
+              height={40}
+              alt="PT Pancatiara Sentrausaha Logo"
+              className="h-10 w-auto"
+              />
           </Link>
           <h2 className="mt-6 text-3xl font-extrabold text-gray-900">
             Sign in to your account
